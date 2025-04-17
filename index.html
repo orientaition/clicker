@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <title>거지키우기 미니게임</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<button id="reset-btn" onclick="resetGame()">리셋</button>
+<h1>거지키우기 미니게임</h1>
+
+<div class="img-row">
+    <div class="img-col">
+        <img src="img/baggar.gif" alt="거지" width="80" height="80">
+        <div class="label">거지</div>
+    </div>
+    <div class="img-col">
+        <img src="img/helper.gif" alt="알바생" width="80" height="80">
+        <div class="label">알바생</div>
+    </div>
+    <div class="img-col">
+        <img src="img/estate.gif" alt="부동산" width="80" height="80">
+        <div class="label">부동산</div>
+    </div>
+</div>
+
+<div id="money">💰 0 원</div>
+
+<div class="info-group" id="top-info">
+    <span>구걸 레벨: <strong id="beg-level">1</strong></span>
+    <span>알바생: <strong id="helper-count">0</strong>명</span>
+    <span>부동산: <strong id="estate-count">0</strong>채</span>
+    <span>환생: <strong id="prestige-count">0</strong>회</span>
+    <span>별: <strong id="star-count">0</strong></span>
+</div>
+
+<div class="vertical-info-group" id="bottom-info">
+    <span>클릭당 수익: <strong id="beg-amount-info">1</strong>원</span>
+    <span>초당 수익: <strong id="sec-income-info">0</strong>원</span>
+</div>
+
+<div class="button-list">
+    <div class="single-button">
+        <button onclick="earnMoney()">구걸하기</button>
+    </div>
+    <div class="pair-button">
+        <button onclick="upgradeBeg()">구걸 업그레이드 (<span id="beg-upgrade-cost">10</span>원)</button>
+    </div>
+    <div class="pair-button">
+        <button onclick="buyHelper()">알바생 고용 (<span id="helper-cost">10,030</span>원)</button>
+    </div>
+    <div class="pair-button">
+        <button onclick="buyHouse()">부동산 구매 (<span id="house-cost">500,000</span>원)</button>
+    </div>
+    <div class="pair-button">
+        <button onclick="showAchievements()">업적</button>
+    </div>
+    <div class="pair-button">
+        <button onclick="showMissions()">미션</button>
+    </div>
+    <div class="pair-button">
+        <button onclick="showPrestige()">환생(프레스티지)</button>
+    </div>
+    <div class="pair-button">
+        <button onclick="showResearch()">연구소</button>
+    </div>
+    <div class="pair-button">
+        <button onclick="showEvent()">이벤트/랜덤박스</button>
+    </div>
+    <div class="pair-button">
+        <button onclick="showRanking()">랭킹</button>
+    </div>
+    <div class="pair-button">
+        <button onclick="toggleTheme()">테마 변경</button>
+    </div>
+    <div class="single-button">
+        <button onclick="toggleBgm()">배경음악 ON/OFF</button>
+    </div>
+</div>
+
+<div id="log"></div>
+
+<!-- 팝업/모달 영역 (스크립트에서 자동 생성 가능) -->
+<div id="achievement-popup" class="popup"></div>
+<div id="achievements-modal" class="modal"></div>
+<div id="missions-modal" class="modal"></div>
+<div id="prestige-modal" class="modal"></div>
+<div id="research-modal" class="modal"></div>
+<div id="event-modal" class="modal"></div>
+<div id="ranking-modal" class="modal"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
