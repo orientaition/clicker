@@ -310,7 +310,7 @@
         if (money >= begUpgradeCost) {
             money -= begUpgradeCost;
             begLevel++;
-            begAmount = Math.floor(begAmount * 1.15);
+            begAmount = Math.floor(begAmount * 1.16);
             begUpgradeCost = Math.floor(begUpgradeCost * 1.18);
             updateScreen("구걸 레벨 업!");
         } else {
