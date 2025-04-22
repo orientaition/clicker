@@ -29,14 +29,14 @@
 
     // 알바생 관련 변수
     let helperCost = 10030;
-    let helperCostRatio = 1.7;
+    let helperCostRatio = 1.9;
     let helperIncomeStart = 1000;
     let helperIncomeRatio = 1.3;
     let helperIncomes = [];
 
     // 부동산 관련 변수
     let houseCost = 500000;
-    let houseCostRatio = 1.8;
+    let houseCostRatio = 1.9;
     let houseIncomeStart = 50000;
     let houseIncomeRatio = 1.3;
     let houseIncomes = [];
@@ -362,7 +362,7 @@
             document.body.style.background = '#333';
             document.body.style.color = '#eee';
         } else {
-            document.body.style.background = '#f7f7e7';
+            document.body.style.background = '#fffff';
             document.body.style.color = '#000';
         }
         saveGame();
@@ -494,7 +494,7 @@
                 document.body.style.background = '#333';
                 document.body.style.color = '#eee';
             } else {
-                document.body.style.background = '#f7f7e7';
+                document.body.style.background = '#fffff';
                 document.body.style.color = '#000';
             }
             // 배경음악 로드
