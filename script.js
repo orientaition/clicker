@@ -74,13 +74,13 @@
         { id: 'helper10', name: '알바생 대장', desc: '알바생 10명 고용', check: () => helper >= 10, reward: 1, achieved: false },
         { id: 'estate10', name: '부동산 부자', desc: '부동산 10채 보유', check: () => house >= 10, reward: 1, achieved: false },
         { id: 'prestige1', name: '환생의 시작', desc: '첫 환생 달성', check: () => prestige >= 1, reward: 3, achieved: false },
-        { id: 'click100', name: '클릭 마스터', desc: '클릭 100회', check: () => clickCount >= 100, reward: 1, achieved: false },
+        { id: 'click1000', name: '클릭 마스터', desc: '클릭 1000회', check: () => clickCount >= 1000, reward: 1, achieved: false },
     ];
 
     // 미션 시스템 (매일 00시 리셋)
     const missions = [
-        { id: 'daily_click', name: '오늘의 클릭', desc: '클릭 50회', check: () => clickCount >= 50, reward: 5000, done: false },
-        { id: 'daily_helper', name: '알바생 고용', desc: '알바생 2명 고용', check: () => helper >= 2, reward: 10000, done: false },
+        { id: 'daily_click', name: '오늘의 클릭', desc: '클릭 100회', check: () => clickCount >= 100, reward: 5000, done: false },
+        { id: 'daily_helper', name: '알바생 고용', desc: '알바생 5명 고용', check: () => helper >= 5, reward: 10000, done: false },
         { id: 'daily_house', name: '부동산 구매', desc: '부동산 1채 구매', check: () => house >= 1, reward: 20000, done: false },
     ];
     let missionProgress = { daily_click: 0, daily_helper: 0, daily_house: 0, lastDate: "" };
